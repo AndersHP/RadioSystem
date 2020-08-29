@@ -9,17 +9,17 @@ namespace MotorolaRadioSystem.SystemTests.APITests
     {
         private string GetURIOfNewRadio()
         {
-            return "/api/radio/100/location";
+            return "/api/radios/100/location";
         }
 
         private string GetURIOfRadioWithLocation()
         {
-            return "/api/radio/1/location";
+            return "/api/radios/1/location";
         }
 
         private string GetURIOfRadioWithoutLocation()
         {
-            return "/api/radio/10/location";
+            return "/api/radios/10/location";
         }
 
         [Fact]

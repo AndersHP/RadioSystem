@@ -14,11 +14,11 @@ namespace MotorolaRadioSystem.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RadioController : ControllerBase
+    public class RadiosController : ControllerBase
     {
         private readonly IRadioGod _radioGod;
 
-        public RadioController(IRadioGod radioGod)
+        public RadiosController(IRadioGod radioGod)
         {
             _radioGod = radioGod;
         }

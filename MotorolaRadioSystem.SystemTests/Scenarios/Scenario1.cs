@@ -11,7 +11,7 @@ namespace MotorolaRadioSystem.SystemTests.Scenarios
     {
         private string GetUri()
         {
-            return "/api/radio/";
+            return "/api/radios/";
         }
 
         private string GetLocation()
@@ -19,9 +19,9 @@ namespace MotorolaRadioSystem.SystemTests.Scenarios
             return "/location";
         }
 
-        private Encoder<RadioController.PostRadioRequest> GetPostEncoder()
+        private Encoder<RadiosController.PostRadioRequest> GetPostEncoder()
         {
-            return new Encoder<RadioController.PostRadioRequest>();
+            return new Encoder<RadiosController.PostRadioRequest>();
         }
 
         private Encoder<string> GetLocationEncoder()
@@ -34,7 +34,7 @@ namespace MotorolaRadioSystem.SystemTests.Scenarios
         {
             //Arrange
             var data1Id = 100;
-            var step1Data = new RadioController.PostRadioRequest
+            var step1Data = new RadiosController.PostRadioRequest
             {
                 alias = "radio100",
                 allowedLocations = new List<string>
@@ -44,7 +44,7 @@ namespace MotorolaRadioSystem.SystemTests.Scenarios
                 }
             };
             var data2Id = 101;
-            var step2Data = new RadioController.PostRadioRequest
+            var step2Data = new RadiosController.PostRadioRequest
             {
                 alias = "radio101",
                 allowedLocations = new List<string>

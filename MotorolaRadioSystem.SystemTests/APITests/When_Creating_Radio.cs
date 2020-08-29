@@ -3,7 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Shouldly;
 using Xunit;
-using static MotorolaRadioSystem.Controllers.RadioController;
+using static MotorolaRadioSystem.Controllers.RadiosController;
 
 namespace MotorolaRadioSystem.SystemTests.APITests
 {
@@ -11,7 +11,7 @@ namespace MotorolaRadioSystem.SystemTests.APITests
     {
         private string GetURI()
         {
-            return "/api/radio/";
+            return "/api/radios/";
         }
 
         private Encoder<PostRadioRequest> GetEncoder()

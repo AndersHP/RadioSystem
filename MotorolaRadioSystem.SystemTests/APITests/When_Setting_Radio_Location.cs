@@ -9,12 +9,12 @@ namespace MotorolaRadioSystem.SystemTests.APITests
     {
         private string GetURI()
         {
-            return "/api/radio/10/location";
+            return "/api/radios/10/location";
         }
 
         private string GetURIOfNonexistentRadio()
         {
-            return "/api/radio/100/location";
+            return "/api/radios/100/location";
         }
 
         private Encoder<string> GetEncoder()

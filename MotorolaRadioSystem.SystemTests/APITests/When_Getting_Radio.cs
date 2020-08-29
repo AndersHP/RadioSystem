@@ -8,7 +8,7 @@ namespace MotorolaRadioSystem.SystemTests.APITests
     {
         private string GetUri()
         {
-            return "/api/radio/";
+            return "/api/radios/";
         }
 
         [Fact]
