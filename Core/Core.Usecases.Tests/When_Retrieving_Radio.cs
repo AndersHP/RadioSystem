@@ -9,6 +9,7 @@ using Xunit;
 
 namespace Core.Usecases.Tests
 {
+    //Everything would ideally have some testing similarly to this but due to time I've only done for the most important code
     public class When_Retrieving_Radio
     {
         IRadioGod GetRadioGod() => new RadioGod(new FakeRadioRepository());
